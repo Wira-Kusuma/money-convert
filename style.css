@@ -10,8 +10,9 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
     display: block;
+    overflow-x: hidden;
 }
 
 .cont {
@@ -35,4 +36,13 @@ body {
 input {
     width: 200px;
     height: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    bottom: 0;
+    background-color: white;
 }
