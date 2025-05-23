@@ -1,0 +1,38 @@
+* {
+    font-family:'Courier New', Courier, monospace ;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(img/money-bg.jpg);
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: block;
+}
+
+.cont {
+    margin: 100px auto;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.insert {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+}
