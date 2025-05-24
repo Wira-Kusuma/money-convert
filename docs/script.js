@@ -12,18 +12,18 @@ function konversi() {
 
 }
 function konversi2() {
-    let rupiah = document.getElementById("rupiah").value
-    let dolar = 1;
+  let rupiah = document.getElementById("rupiah").value;
+  let dolar = 16246; // 1 USD = 16.246 IDR (kurs)
 
-    let hasil = parseFloat(rupiah) / dolar;
+  let hasil = parseFloat(rupiah) / dolar;
 
-    document.getElementById("keluaran").innerText =
-    "Hasil konversi: " + hasil.toLocaleString("en-EN", {
-    // style: "currency",
-    currency: "USD"
+  document.getElementById("keluaran").innerText =
+    "Hasil konversi: " + hasil.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD"
     });
-
 }
+
 
 function dr() {
     document.getElementById("cont2").style.display="none";
