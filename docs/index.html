@@ -9,16 +9,36 @@
 </head>
 <body>
     
-    <div class="cont">
+    <div class="cont" id="cont2">
+        <h2>Money Convert</h2>
+        <div class="dropdown">   
+            <p onclick="dr()">Dolar <br> - <br> Rupiah</p>
+            <p onclick="rd()">Rupiah <br> - <br> Dolar</p>
+        </div>
+    </div>
+    <div class="cont" id="cont">
         <h2>Money Convert</h2>
         <p>Dolar ke Rupiah </p>
         <div class="insert">
-            <input type="number" name="rupiah" id="dolar" placeholder="Dolar">
+            <input type="number" name="dolar" id="dolar" placeholder="Dolar">
             <button onclick="konversi()">Convert</button>
             <p>16.246 Rupiah <br> per <br> 1 Dollar</p>
 
             <p>Last update 25/5/2025</p>
             <p id="output"></p>
+        </div>
+
+    </div>
+    <div class="cont" id="contrd">
+        <h2>Money Convert</h2>
+        <p>Rupiah ke Dolar </p>
+        <div class="insert">
+            <input type="number" name="rupiah" id="rupiah" placeholder="Rupiah">
+            <button onclick="konversi2()">Convert</button>
+            <p>16.246 Rupiah <br> per <br> 1 Dollar</p>
+
+            <p>Last update 25/5/2025</p>
+            <p id="keluaran"></p>
         </div>
 
     </div>

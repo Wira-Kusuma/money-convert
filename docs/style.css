@@ -38,14 +38,41 @@ input {
     height: 30px;
 }
 
+.dropdown {
+    width: 70%;
+    border: 1px solid;
+    padding-top: -5px;
+    padding-bottom: -5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dropdown p {
+    border: 1px solid;
+    padding: 5px;
+    background-color: antiquewhite;
+    transition: ease-in 0.1s;
+    cursor: pointer;
+}
+
+.dropdown p:hover {
+    transform: scale(0.9);
+}
+
 footer {
     display: flex;
     justify-content: center;
     place-items: center;
     flex-direction: column;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: white;
 }
+
+#cont2 {display: flex;}
+.cont {display: none;}
 
 @media screen and (max-width: 1000px) {
     body {
