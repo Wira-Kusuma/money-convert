@@ -15,7 +15,7 @@ function konversi2() {
     let rupiah = document.getElementById("rupiah").value
     let dolar = 1;
 
-    let hasil = parseFloat(dolar) * rupiah;
+    let hasil = parseFloat(rupiah) / dolar;
 
     document.getElementById("keluaran").innerText =
     "Hasil konversi: " + hasil.toLocaleString("en-EN", {
