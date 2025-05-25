@@ -1,6 +1,5 @@
 # money-convert
 
-![image](https://github.com/user-attachments/assets/513dc98c-95d2-4ca8-b8c2-9cb6b9d77254)
-
-![image](https://github.com/user-attachments/assets/129e075f-7c20-4e6d-8fcb-204ada0bd69b)
+![image](https://github.com/user-attachments/assets/5206aba4-fb7a-447f-b763-7edbe25d25ab)
+![image](https://github.com/user-attachments/assets/07e3973b-feed-4afd-a611-928dd6cc430d)
 
