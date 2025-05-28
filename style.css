@@ -33,3 +33,34 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
+select {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+    background-color: bisque;
+    transition: ease-in-out 0.1s;
+    border: 1px solid;
+}
+
+button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
