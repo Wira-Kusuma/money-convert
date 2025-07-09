@@ -36,3 +36,10 @@ function rd() {
       document.getElementById("contrd").style.display="flex";
     },400)
 }
+
+
+// counting when enter clicked
+document.getElementById("dolar").addEventListener("keydown", function (event) {
+if (event.key === "Enter")
+konversi();
+});

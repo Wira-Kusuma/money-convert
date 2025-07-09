@@ -10,18 +10,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    display: grid;
     place-items: center;
-}
-
-header {
-    width: 100%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: sticky;
-    top: 0;
 }
 
 main {
@@ -62,5 +52,5 @@ button a {
 }
 
 button:hover {
-    transform: scale(0.9);
+    background-color: beige;
 }

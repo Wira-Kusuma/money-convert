@@ -56,7 +56,7 @@ input {
 }
 
 .dropdown p:hover {
-    transform: scale(0.9);
+    background-color: beige;
 }
 
 footer {
