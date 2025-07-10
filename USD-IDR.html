@@ -22,9 +22,9 @@
         <div class="insert">
             <input type="number" name="dolar" id="dolar" placeholder="Dolar">
             <button onclick="konversi()">Convert</button>
-            <p>16.248 Rupiah <br> per <br> 1 Dollar</p>
+            <p><span id="idrRate">16.248 Rupiah</span> <br> per <br> 1 Dollar</p>
 
-            <p>Last update 9/7/2025</p>
+            <p>using api frankfurter</p>
             <p id="output"></p>
         </div>
 
@@ -35,17 +35,18 @@
         <div class="insert">
             <input type="number" name="rupiah" id="rupiah" placeholder="Rupiah">
             <button onclick="konversi2()">Convert</button>
-            <p>16.248 Rupiah <br> per <br> 1 Dollar</p>
+            <p><span id="idrRate">16.248 Rupiah</span> <br> per <br> 1 Dollar</p>
 
-            <p>Last update 9/7/2025</p>
+            <p>using api frankfurter</p>
             <p id="keluaran"></p>
         </div>
 
     </div>
 
     <footer>
-        <p>all rights reserved </p> 
-        <p>Powered by <a href="https://github.com/Wira-Kusuma/money-convert">Github</a></p>
+        <p>&copy; 2024 Money Convert. All rights reserved.
+            Powered by <a href="https://github.com/Wira-Kusuma/money-convert" target="_blank" rel="noopener">GitHub</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
