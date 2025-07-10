@@ -23,7 +23,10 @@ fetch("https://api.frankfurter.app/latest?amount=1&from=USD&to=IDR")
   .then(res => res.json())
   .then(data => {
     rate = data.rates.IDR;
-    document.getElementById("idrRate").innerText = `${rate} rupiah`;
+    document.getElementById("idrRate").innerText = `${rate} rupiah` + hasil.toLocaleString("id-ID", {
+      style: "currency",
+      currency: "IDR"
+    });
 });
 
 function konversi() {
