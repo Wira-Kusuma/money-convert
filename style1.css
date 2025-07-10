@@ -1,5 +1,7 @@
 * {
     font-family:'Courier New', Courier, monospace ;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,14 +13,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    display: block;
+    display: grid;
+    place-items: center;
     overflow-x: hidden;
 }
 
 .cont {
-    margin: 100px auto;
-    width: 200px;
-    padding: 10px;
+    width: fit-content;
+    padding: 1.2rem;
+    gap: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -27,15 +30,27 @@ body {
     background-color: white;
 }
 
+.cont > select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cont button {
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+}
+
 .insert {
     display: flex;
     flex-direction: column;
-    column-gap: 10px;
+    gap: 1rem;
 }
 
 input {
     width: 200px;
     height: 30px;
+    padding: 0.2rem;
 }
 
 .dropdown {
@@ -69,6 +84,8 @@ footer {
     left: 0;
     right: 0;
     background-color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;
 }
 
 #cont2 {display: flex;}

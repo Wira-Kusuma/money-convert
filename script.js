@@ -1,3 +1,19 @@
+document.querySelector(".cont button").addEventListener("click", function() {
+  let select = document.querySelector("select");
+  if (select.value === "") {
+    document.querySelector(".cont p").style.display="flex";
+    document.querySelector(".cont p").style.color="red";
+    document.querySelector(".cont p").textContent="Choose your currency!"; 
+  }
+  else if (select.value === "USD-IDR") {
+    dr();
+  }
+  else if (select.value === "IDR-USD") {
+    rd();
+  }
+});
+
+
 // api 
 
 // global variable get from api
