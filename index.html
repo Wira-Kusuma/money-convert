@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="cont" id="cont2">
+    <div class="choose">
         <h2>Money Convert</h2>
             <select>
                 <option value="">Choose currency to convert</option>
@@ -19,26 +19,26 @@
             <p style="display: none;"></p>
             <button>Convert</button>
     </div>
-    <div class="cont" id="cont">
+    <div class="cont usdIDR" >
         <h2>Money Convert</h2>
         <p>Dolar to Rupiah </p>
         <div class="insert">
             <input type="number" name="dolar" id="dolar" placeholder="Dolar">
-            <button onclick="konversi()">Convert</button>
-            <p><span id="idrRate">16.248 Rupiah</span> <br> per <br> 1 Dollar</p>
+            <button onclick="usdIDR()">Convert</button>
+            <p><span id="idrRate"></span> <br> per <br> 1 $</p>
 
             <p>using api frankfurter</p>
             <p id="output"></p>
         </div>
 
     </div>
-    <div class="cont" id="contrd">
+    <div class="cont idrUSD">
         <h2>Money Convert</h2>
         <p>Rupiah to Dolar </p>
         <div class="insert">
             <input type="number" name="rupiah" id="rupiah" placeholder="Rupiah">
-            <button onclick="konversi2()">Convert</button>
-            <p><span id="idrRate">16.248 Rupiah</span> <br> per <br> 1 Dollar</p>
+            <button onclick="isdUSD()">Convert</button>
+            <p><span id="idrRate"></span> <br> per <br> 1 $</p>
 
             <p>using api frankfurter</p>
             <p id="keluaran"></p>

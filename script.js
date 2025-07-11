@@ -1,9 +1,9 @@
-document.querySelector(".cont button").addEventListener("click", function() {
+document.querySelector(".choose button").addEventListener("click", function() {
   let select = document.querySelector("select");
   if (select.value === "") {
-    document.querySelector(".cont p").style.display="flex";
-    document.querySelector(".cont p").style.color="red";
-    document.querySelector(".cont p").textContent="Choose your currency!"; 
+    document.querySelector(".choose p").style.display="flex";
+    document.querySelector(".choose p").style.color="red";
+    document.querySelector(".choose p").textContent="Choose your currency!"; 
   }
   else if (select.value === "USD-IDR") {
     dr();
@@ -23,13 +23,13 @@ fetch("https://api.frankfurter.app/latest?amount=1&from=USD&to=IDR")
   .then(res => res.json())
   .then(data => {
     rate = data.rates.IDR;
-    document.getElementById("idrRate").innerText = `${rate} rupiah` + hasil.toLocaleString("id-ID", {
+    document.getElementById("idrRate").innerText = rate.toLocaleString("id-ID", {
       style: "currency",
       currency: "IDR"
     });
 });
 
-function konversi() {
+function usdIDR() {
   let dolar = document.getElementById("dolar").value;
   let rupiah = rate;
   let hasil = parseFloat(dolar) * rupiah;
@@ -47,7 +47,7 @@ function konversi() {
   }
 }
 
-function konversi2() {
+function idrUSD() {
   let rupiah = document.getElementById("rupiah").value;
   let dolar = rate; // 1 USD = 16.246 IDR (kurs)
 
@@ -73,14 +73,14 @@ function konversi2() {
 
 function dr() {
     setTimeout(() =>{
-      document.getElementById("cont2").style.display="none";
-      document.getElementById("cont").style.display="flex";
+      document.querySelector(".choose").style.display="none";
+      document.querySelector(".usdIDR").style.display="flex";
     },400)
 }
 function rd() {
     setTimeout(() => {
-      document.getElementById("cont2").style.display="none";
-      document.getElementById("contrd").style.display="flex";
+      document.querySelector(".choose").style.display="none";
+      document.getElementById("idrUSD").style.display="flex";
     },400)
 }
 
