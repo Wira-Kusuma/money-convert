@@ -13,13 +13,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    display: grid;
-    place-items: center;
+    display: block;
     overflow-x: hidden;
 }
 
 .cont, .choose {
     width: fit-content;
+    margin: 7rem auto;
     padding: 1.2rem;
     gap: 2rem;
     text-align: center;
@@ -86,8 +86,12 @@ footer {
     left: 0;
     right: 0;
     background-color: white;
-    padding: 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+}
+
+footer p {
+    text-align: center;
 }
 
 
