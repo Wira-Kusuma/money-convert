@@ -1,56 +1,108 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace ;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-image: url(img/money-bg.jpg);
-    height: 100vh;
     padding: 0;
     margin: 0;
+    background-image: url(img/money-bg.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
     display: grid;
     place-items: center;
+    overflow-x: hidden;
 }
 
-main {
-    margin-top: 60px;
-    width: 250px;
-    background-color: white;
-    height: 300px;
+.cont {
+    width: fit-content;
+    padding: 1.2rem;
+    gap: 2rem;
+    text-align: center;
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-
-select {
-    width: 200px;
-    height: 30px;
-    margin-bottom: 20px;
-    font-size: 16px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    background-color: white;
 }
 
-button {
+.cont > select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cont button {
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+}
+
+.insert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
     width: 200px;
     height: 30px;
-    font-size: 16px;
-    border: 0px;
-    cursor: pointer;
-    background-color: bisque;
-    transition: ease-in-out 0.1s;
+    padding: 0.2rem;
+}
+
+.dropdown {
+    width: 70%;
     border: 1px solid;
+    padding-top: -5px;
+    padding-bottom: -5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-button a {
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+.dropdown p {
+    border: 1px solid;
+    padding: 5px;
+    background-color: antiquewhite;
+    transition: ease-in 0.1s;
+    cursor: pointer;
 }
 
-button:hover {
+.dropdown p:hover {
     background-color: beige;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+#cont2 {display: flex;}
+.cont {display: none;}
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: 90vh;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+    

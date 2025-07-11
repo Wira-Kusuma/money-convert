@@ -39,7 +39,7 @@ function konversi() {
     document.getElementById("output").style.color="red";
   }
   else {
-    document.getElementById("output").innerText ="Hasil konversi: " + hasil.toLocaleString("id-ID", {
+    document.getElementById("output").innerText =`$ ${dolar} = ` + hasil.toLocaleString("id-ID", {
       style: "currency",
       currency: "IDR"
     });
@@ -59,7 +59,7 @@ function konversi2() {
   }
   else {
     document.getElementById("keluaran").innerText =
-    "Hasil konversi: " + hasil.toLocaleString("en-US", {
+    `Rp.${rupiah} = ` + hasil.toLocaleString("en-US", {
     style: "currency",
     currency: "USD"
   });
@@ -86,8 +86,18 @@ function rd() {
 
 
 // counting when enter clicked
+let cont = document.querySelector(".cont");
+let contrd = document.querySelector(".contrd");
+
 document.getElementById("dolar").addEventListener("keydown", function (event) {
-if (event.key === "Enter")
-konversi();
+if (event.key === "Enter" && getComputedStyle(cont).display === "flex"){
+  konversi();
+}
+
+
+if (event.key === "Enter" && getComputedStyle(contrd).display === "flex"){
+  konversi2();
+}
 });
+
 
